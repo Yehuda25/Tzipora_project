@@ -58,6 +58,11 @@ const StepOne = (props) => {
             >
             {"<"} לשלב הבא 
             </Link>
+
+            
+            <Link href={'/'} className='absolute bottom-10 right-10 z-50 text-2xl font-bold text-black bg-red-100 px-10 py-1 m-1 rounded-full cursor-pointer hover:bg-slate-600'>
+                חזרה לדף הבית
+            </Link>
             
         </div>
     )
