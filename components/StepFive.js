@@ -19,7 +19,7 @@ const StepFive = (props) => {
 
     const handleDone = () => {
         alert('כל הכבוד! סיימת את השלב החמישי');
-        window.location.href="/";  
+        window.location.href="https://forms.gle/LSS6S5q5a2dqNESh9";  
     }
 
     return (
