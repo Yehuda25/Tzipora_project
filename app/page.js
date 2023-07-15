@@ -26,6 +26,16 @@ export default function Home() {
           <video className='object-cover h-[100vh] w-[100%]' src='/assets/videos/front.mp4' autoPlay loop muted />
       </div>
 
+      <div className=' absolute  bottom-10 left-5 bg-neutral-500 p-5 rounded text-right'>
+        <h3 className='text-[2rem] text-black'> מגישות </h3>
+        <ul>
+          <li className='text-xl font-bold text-lime-500'> ציפורה נהרי  <span className='text-black'> 329006241 </span> </li>
+          <li className='text-xl font-bold text-lime-500'> יוטל מלול    <span className='text-black'> 327225546 </span>  </li>
+          <li className='text-xl font-bold text-lime-500'> פייגי שאזו   <span className='text-black'> 324858265 </span>  </li>
+          <li className='text-xl font-bold text-lime-500'> מיטל אל יעקב <span className='text-black'> 212625719 </span>  </li>
+        </ul>
+      </div>
+
     </div>
   )
 }

@@ -14,12 +14,6 @@ export default function RootLayout({ children }) {
     <html lang="he">
       <body className={open_Sans.className}>
         {children}
-        <Link
-          href='mailto:mail@yehuda-nehari.com'
-           className='absolute bottom-1 left-[40%] z-50 text-white px-1 rounded cursor-pointer bg-gradient-to-r from-purple-500 to-pink-500'
-        >
-          mail@yehuda-nehari.com
-        </Link>
       </body>
     </html>
   )
