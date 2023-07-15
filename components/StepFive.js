@@ -18,7 +18,8 @@ const StepFive = (props) => {
     const [state, setState] = useState();
 
     const handleDone = () => {
-        alert('סיימתי')
+        alert('כל הכבוד! סיימת את השלב החמישי');
+        window.location.href="/";  
     }
 
     return (
@@ -34,7 +35,7 @@ const StepFive = (props) => {
 
                 <div>
                     <h1 className='text-black  font-bold text-[3rem]'> שיחה עם מנהלים בכירים </h1>
-                    <h2 className={`${state && state.style} ${state && 'speech bottom'} text-[2rem] text-slate-100 font-bold w-[40rem]'`}> {state && state.question} </h2>
+                    <h2 className={` text-[2rem] text-slate-100 font-bold w-[40rem]'`}> {state && state.question} </h2>
                 </div>
 
             </div>

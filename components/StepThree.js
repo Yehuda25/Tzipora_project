@@ -1,11 +1,19 @@
 'use client'
 import Image from 'next/image'
 import Link from 'next/link';
+import NextLevel from './nextLevel';
+import { useState } from 'react';
 
 
 const StepThree = (props) => {
 
+    const [click, setClick] = useState(true)
+
     return (
+        <>
+        {click ?
+            <NextLevel setClick={setClick} />
+        :
         <div className=''>
 
             <div className='absolute z-50 text-center w-[100%] flex justify-center'>
@@ -33,6 +41,8 @@ const StepThree = (props) => {
             </Link>
             
         </div>
+    }
+    </>
     )
 }
 

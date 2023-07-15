@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link';
 import { useState } from 'react';
+import NextLevel from './nextLevel';
 
 
 
@@ -18,8 +19,13 @@ const StepTwo = (props) => {
     ];
 
     const [state, setState] = useState();
+    const [click, setClick] = useState(true);
 
     return (
+        <>
+        {click ?
+            <NextLevel setClick={setClick} /> 
+        :
         <div className=''>
 
             <div className='absolute z-50 text-center w-[100%] flex justify-around'>
@@ -63,6 +69,8 @@ const StepTwo = (props) => {
             </Link>
             
         </div>
+    }
+    </>
     )
 }
 
