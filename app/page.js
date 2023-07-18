@@ -1,10 +1,19 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
+import NextLevel from '@/components/nextLevel'
+import { useState } from 'react';
 
 export default function Home() {
-  return (
+  const [open, setClick] = useState(true);
 
-    <div className=''>
+
+  return (
+<>
+      {open ? <NextLevel setClick={setClick} from="front" />
+
+      :
+      <div className=''>
 
       <div className='absolute z-50  text-center w-[100%]'>
 
@@ -35,7 +44,9 @@ export default function Home() {
           <li className='text-xl font-bold text-lime-500'> מיטל אל יעקב <span className='text-black'> 212625719 </span>  </li>
         </ul>
       </div>
+      </div>
 
-    </div>
+  }
+</>
   )
 }
